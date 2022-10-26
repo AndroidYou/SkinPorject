@@ -1,4 +1,4 @@
-package com.cms.skin
+package com.cms.skinlibrary
 
 import android.content.Context
 import android.content.res.ColorStateList

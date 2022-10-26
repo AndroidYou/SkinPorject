@@ -10,7 +10,7 @@
             android:layout_height="match_parent"
             tools:context=".SkinMainActivity">
         <TextView
-                android:id="@+id/tv_theme"
+                android:id="@+id/tv_theme_item"
                 android:background="@color/purple_200"
                 android:textColor="@color/white"
                 android:text="选择主题颜色"
@@ -42,6 +42,7 @@
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"/>
             <RadioButton
+                android:text="红色"
                     android:id="@+id/rb_red"
                     android:gravity="center"
                     android:textColor="@android:color/white"

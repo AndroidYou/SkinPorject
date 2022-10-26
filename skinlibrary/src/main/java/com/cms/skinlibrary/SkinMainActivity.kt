@@ -2,8 +2,7 @@ package com.cms.skinlibrary
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
-import com.cms.skin.SkinManager
-import com.cms.skin.SkinSharePreference
+import com.cms.skinlibrary.SkinSharePreference
 import com.cms.skinlibrary.databinding.ActivitySkinMainBinding
 
 

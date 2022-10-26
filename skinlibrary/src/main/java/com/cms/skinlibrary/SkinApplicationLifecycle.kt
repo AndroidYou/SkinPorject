@@ -1,10 +1,9 @@
-package com.cms.skin
+package com.cms.skinlibrary
 
 import android.app.Activity
 import android.app.Application
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import com.cms.skinlibrary.utils.ToastUtils
 import java.util.*
 
@@ -14,7 +13,6 @@ import java.util.*
  * @description:
  **/
 class SkinApplicationLifecycle : Application.ActivityLifecycleCallbacks  {
-    private var mObservable:Observable?=null
     companion object {
         val instance by lazy(LazyThreadSafetyMode.SYNCHRONIZED) {
             SkinApplicationLifecycle()

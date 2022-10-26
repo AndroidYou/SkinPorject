@@ -1,8 +1,7 @@
 package com.cms.skinproject.app
 
 import android.app.Application
-import com.cms.skin.SkinManager
-import com.cms.skinlibrary.utils.ToastUtils
+import com.cms.skinlibrary.SkinManager
 
 /**
  * @author: Mr.You

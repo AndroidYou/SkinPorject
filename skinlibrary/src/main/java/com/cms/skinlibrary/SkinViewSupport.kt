@@ -1,4 +1,4 @@
-package com.cms.skin
+package com.cms.skinlibrary
 
 /**
  * @author: Mr.You

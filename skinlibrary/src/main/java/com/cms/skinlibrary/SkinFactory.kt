@@ -1,4 +1,4 @@
-package com.cms.skin
+package com.cms.skinlibrary
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -53,6 +53,7 @@ class SkinFactory : Factory2, Observer{
         if (view==null){
             view = createView(name,context,attrs)
         }
+        Log.i(TAG, "onCreateView: $view")
         if (view!=null){
              // 收集view属性
             SkinAttributeSet.instance.lookAttributeSet(view,attrs)
@@ -79,21 +80,6 @@ class SkinFactory : Factory2, Observer{
         return null
     }
 
-    /*private fun createView(name: String, context: Context, attrs: AttributeSet) : View? {
-       var constructor:Constructor<out View>? = sConstructorMap[name]
-        if (constructor==null){
-            try {
-                val classView = context.classLoader.loadClass(name).asSubclass(View::class.java)
-                constructor =  classView.getConstructor(*mConstructorSignature)
-                sConstructorMap[name] = constructor
-            }catch (e:Exception){}
-
-        }
-
-        return constructor?.newInstance(context,attrs)
-    }
-*/
-
     private fun createView(name: String, context: Context, attrs: AttributeSet): View? {
          val constructor = findConstructor(context, name)
          try {
@@ -119,7 +105,7 @@ class SkinFactory : Factory2, Observer{
      }
 
     override fun update(o: Observable?, arg: Any?) {
-        Log.i(SkinFactory.TAG, "update: 收到通知")
+        Log.i(TAG, "update: 收到通知")
         SkinAttributeSet.instance.applySkin()
     }
 }

@@ -13,11 +13,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mainBinding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestWindowFeature(Window.FEATURE_NO_TITLE)
         mainBinding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION)
-
-        /*mainBinding.tvClick.setOnClickListener { startActivity(Intent(this,SkinMainActivity::class.java)) }*/
+        
+        mainBinding.tvTheme.setOnClickListener { startActivity(Intent(this,SkinMainActivity::class.java)) }
     }
 }

@@ -1,4 +1,4 @@
-package com.cms.skin
+package com.cms.skinlibrary
 
 import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Drawable
@@ -8,6 +8,9 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.view.ViewCompat
+import com.cms.skinlibrary.SkinResources
+import com.cms.skinlibrary.SkinTools
+import com.cms.skinlibrary.SkinViewSupport
 
 
 /**

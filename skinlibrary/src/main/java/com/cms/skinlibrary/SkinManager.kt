@@ -1,14 +1,14 @@
-package com.cms.skin
+package com.cms.skinlibrary
 
-import android.app.Activity
 import android.app.Application
 import android.content.Context
 import android.content.pm.PackageManager
 import android.content.res.AssetManager
 import android.content.res.Resources
-import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
+import com.cms.skinlibrary.SkinResources
+import com.cms.skinlibrary.SkinSharePreference
 import java.lang.Exception
 import java.util.Observable
 
